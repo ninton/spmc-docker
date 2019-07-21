@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  ubuntu16:
+    tty: true
+    container_name: spmc.docker
+    build: ./ubuntu16
+    volumes:
+      - ./pdf:/tmp:cached
